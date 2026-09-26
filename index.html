@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIDWORLD — Правила сервера</title>
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        padding: 28px 38px;
+        background: #fff;
+        border: 3px solid #222;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.55fr 1fr;
+        gap: 70px;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .server {
+        position: relative;
+        background: #16b58d;
+        min-height: 128px;
+        border-radius: 10px;
+        padding: 18px 14px;
+        color: #050505;
+        font-family: "Arial Narrow", Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    .server::before,
+    .rules::before,
+    .question::before,
+    .visuals::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .server::before { background: #3e9e36; }
+
+    .rules {
+        position: relative;
+        margin-top: 24px;
+        background: #ff5c61;
+        border-radius: 10px;
+        min-height: 569px;
+        padding: 30px 34px 30px 43px;
+        color: white;
+        font-family: "Arial Narrow", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.28;
+    }
+
+    .rules::before { background: #ff5c61; }
+
+    .rules ol {
+        margin: 0;
+        padding-left: 17px;
+    }
+
+    .rules li {
+        padding-left: 2px;
+        margin-bottom: 3px;
+    }
+
+    .fake-button {
+        width: 308px;
+        height: 127px;
+        margin: 35px auto 0;
+        border-radius: 11px;
+        background: #df3035;
+        padding: 29px 46px;
+    }
+
+    .fake-button-inner {
+        width: 100%;
+        height: 66px;
+        border-radius: 10px;
+        background: #ff4e53;
+    }
+
+    .question {
+        position: relative;
+        margin-top: 37px;
+        background: #46118b;
+        border-radius: 9px;
+        min-height: 144px;
+        padding: 31px 20px;
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    .question::before { background: #2985cf; }
+
+    .visuals {
+        position: relative;
+        margin-top: 40px;
+        background: #f05c61;
+        border-radius: 10px;
+        min-height: 333px;
+        padding: 27px 42px;
+        color: white;
+        font-family: "Arial Narrow", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    .visuals::before { background: #ff7547; }
+
+    .visuals ol {
+        margin: 5px 0 0 0;
+        padding-left: 20px;
+    }
+
+    .visuals li { margin: 3px 0; }
+
+    .note {
+        margin-top: 28px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 850px) {
+        body { padding: 18px; }
+        .page {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .server { font-size: 19px; }
+        .question { margin-top: 0; }
+        .visuals { margin-top: 20px; }
+    }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+    <section class="left">
+        <div class="server">
+            Список правил сервера LIDWORLD<br>
+            айпи:McLidWorld.aternos.me:30328
+        </div>
+
+        <div class="rules">
+            <ol>
+                <li>НЕЛЬЗЯ ЧИТОВ ПРАВИЛО<br>ДЛЯ ИГРОКОВ</li>
+                <li>МУТ ЗА ОСКОРБЛЕНИЕ В ЧАТЕ</li>
+                <li>ГРИФ СЕРВЕР</li>
+                <li>НЕЛЬЗЯ МАТЕРИТЬСЯ</li>
+                <li>НЕЛЬЗЯ АФК ДОЛГО НА ВАРПАХ ЗА ЭТО БАН</li>
+                <li>ПРАВИЛО ДЛЯ ВСЕХ ОСОБИСТО ДЛЯ ИГРОКОВ И ДЛЯ МОДЕРОВ</li>
+                <li>если игрок нарушает правила сервера он попадает в БАН</li>
+                <li>НЕЛЬЗЯ СПАМИТЬ</li>
+                <li>и такие правила и т.д.<br>как на реливорлд .</li>
+            </ol>
+
+            <div class="fake-button">
+                <div class="fake-button-inner"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="right">
+        <div class="question">
+            какие можно<br>
+            визуалы ? :::
+        </div>
+
+        <div class="visuals">
+            разрешинии<br>
+            визуали:
+            <ol>
+                <li>реливизус</li>
+                <li>призрак</li>
+                <li>НЕ<br>РАЗРИШИНЫЕ</li>
+                <li>PUSLE<br>VISUALS</li>
+                <li>HAKURA</li>
+            </ol>
+
+            <div class="note">
+                ЕЩЕ КАКИЕ НЕТУ В ЕТОМ<br>
+                СПИСКОМ НЕ РАЗРИШИНЫЕ
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
